@@ -49,7 +49,7 @@ static const char *threadnames[MAXTHREADS];
 //! The thread-ids.
 static pthread_t threadids[MAXTHREADS];
 
-__thread int tidx;
+static __thread int tidx;
 
 //! Before tracing, a thread should make itself known to ThreadTracer.
 int tt_signin(const char *threadname)
